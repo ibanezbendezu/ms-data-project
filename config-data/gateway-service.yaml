@@ -30,3 +30,19 @@ spring:
           uri: lb://employee-service
           predicates:
             - Path=/employee/**
+        - id: justification-service
+          uri: lb://justification-service
+          predicates:
+            - Path=/justification/**
+        - id: approval-service
+          uri: lb://approval-service
+          predicates:
+            - Path=/approval/**
+        - id: clock-service
+          uri: lb://clock-service
+          predicates:
+            - Path=/clock/**
+        - id: wage-service
+          uri: lb://wage-service
+          predicates:
+            - Path=/wage/**
